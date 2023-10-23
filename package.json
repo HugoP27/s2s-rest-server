@@ -1,0 +1,30 @@
+{
+  "name": "s2s-rest-server",
+  "version": "1.0.0",
+  "description": "RESTful server demo for S2S interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoP27/s2s-rest-server.git"
+  },
+  "keywords": [
+    "rest",
+    "s2s"
+  ],
+  "author": "HR Paul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HugoP27/s2s-rest-server/issues"
+  },
+  "homepage": "https://github.com/HugoP27/s2s-rest-server#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "sqlite3": "^5.1.6"
+  }
+}
