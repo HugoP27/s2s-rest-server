@@ -37,6 +37,15 @@ db.serialize(() => {
 });
 
 // Middleware for parsing JSON data in the request body
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Allow requests from any origin
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); // Allow the HTTP methods you need
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  ); // Allow the headers you need
+  next();
+});
 app.use(bodyParser.json());
 
 // HTML page to show when the user visits root (localhost:3000)
